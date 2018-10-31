@@ -1,15 +1,15 @@
-# Masternode guide and script files related to ARGO masternode
+# Masternode guide and script files related to Argoneum masternode
 
-Welcome to our ARGO masternode repository. Here you find guides like how to update your running masternode, how to setup a new masternode and some hints how to fix issues, which we heard about from our community.
+Welcome to our Argoneum masternode repository. Here you find guides like how to update your running masternode, how to setup a new masternode and some hints how to fix issues, which we heard about from our community.
 
-## Installing ARGO masternode:
+## Installing Argoneum masternode:
 
-To install a new ARGO masternode (including updates and sentinel), just download our script and execute it and follow steps showed in script.
+To install a new Argoneum masternode (including updates and sentinel), just download our script and execute it and follow steps showed in script.
 
 **Important:** Run this script as **_root_**, if you plan to run this script as non-root user, it may fails!\
 **Our script is tested on Ubuntu 16.04**
 
-`sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/Argo20/masternode/master/masternode-setup.sh)"`
+`sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/Argoneum/masternode/master/masternode-setup.sh)"`
 
 ## Issue with Wallet status **_WATCHDOG_EXPIRED_**
 
@@ -22,7 +22,7 @@ If you continue to occurs WATCHDOG_EXPIRED error, check the following:
   
     "status": "Masternode successfully started"
   
-`cd ~/ARGO/sentinel/` \
+`cd ~/Argoneum/sentinel/` \
 `./venv/bin/py.test ./test`
   
     ===== 23 passed in 0.25 seconds =====

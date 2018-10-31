@@ -1,7 +1,7 @@
 ### **[Back to guide main site](readme.md)**
 
 ## Collateral
-To run a masternode, you need to send 10000 ARGO coins to a new generated wallet.
+To run a masternode, you need to send 10000 AGM coins to a new generated wallet.
 
 1. To generate a new wallet address, open your wallet and goto **File** -> **Receiving addresses...**
 
@@ -21,9 +21,9 @@ To run a masternode, you need to send 10000 ARGO coins to a new generated wallet
     
     copy the wallet address to go forward to next step
 
-2. Send 10000 ARGO coins to new wallet address
+2. Send 10000 AGM coins to new wallet address
 
-    Open tab **Send**, enter your new created wallet address in field **Pay To:**, the amount of 10000 ARGO coins in field **Amount** and    hit the button **Send**
+    Open tab **Send**, enter your new created wallet address in field **Pay To:**, the amount of 10000 AGM coins in field **Amount** and    hit the button **Send**
     
     <img src="https://node-support.network/coins/argo/mn-guide/collateral/5.png">
     

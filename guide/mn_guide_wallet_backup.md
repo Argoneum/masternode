@@ -12,7 +12,7 @@ To create a backup of your wallet (wallet.dat), follow this steps:
 
     <img src="https://node-support.network/coins/argo/mn-guide/12.png">
     
-    I named my wallet.dat -> ARGO-wallet.dat because ARGO is not my only wallet backup file.
-    Now your ARGO-wallet.dat is saved on your local disk in C:\Backup (my choosed file location for this guide) folder and my recommendation to you is: **Save every wallet backup on USB-Stick additionally!**
+    I named my wallet.dat -> ARGONEUM-wallet.dat because Argoneum is not my only wallet backup file.
+    Now your ARGONEUM-wallet.dat is saved on your local disk in C:\Backup (my choosed file location for this guide) folder and my recommendation to you is: **Save every wallet backup on USB-Stick additionally!**
 
 ### **[Continue to 4. Collateral](mn_guide_collateral.md)**

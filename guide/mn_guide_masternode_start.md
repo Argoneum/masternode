@@ -15,7 +15,7 @@ now we need to add some informations in this file:
     You can choose a masternode alias name yourself (e.g. mn01)
     
 2. IP-Address:port\
-    IP-Address of your VPS and ARGO predefined port 8989
+    IP-Address of your VPS and Argoneum predefined port 8989
 
 3. masternode genkey\
     Masternode genkey which was generated via setup script, or via local desktop wallet

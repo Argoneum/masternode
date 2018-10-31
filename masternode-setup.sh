@@ -2,20 +2,20 @@
 
 TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='argo.conf'
-CONFIGFOLDER='/root/.argocore'
-DATAFOLDER='/root/ARGO'
-TMP_DATAFOLDER=$TMP_FOLDER/argocore-1.2.1/bin/
+CONFIGFOLDER='/root/.argoneum'
+DATAFOLDER='/root/Argoneum'
+TMP_DATAFOLDER=$TMP_FOLDER/argoneum-1.0.0/bin/
 SENTINEL_CONF=$DATAFOLDER/sentinel/sentinel.conf
-COIN_DAEMON='argod'
-COIN_CLI='argo-cli'
+COIN_DAEMON='argoneumd'
+COIN_CLI='argoneum-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_LATEST_RELEASE='argocore-1.2.1-x86_64-unknown-linux-gnu.tar.gz'
-COIN_TGZ=$(curl -s https://api.github.com/repos/Argo20/argo/releases/latest | grep -i $COIN_LATEST_RELEASE | grep -i "browser_download_url" | awk -F" " '{print $2}' | sed 's/"//g')
+COIN_LATEST_RELEASE='argoneum-1.0.0-linux64.tar.gz'
+COIN_TGZ=$(curl -s https://api.github.com/repos/Argoneum/argoneum/releases/latest | grep -i $COIN_LATEST_RELEASE | grep -i "browser_download_url" | awk -F" " '{print $2}' | sed 's/"//g')
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_CHAIN_FILE='argo-blockchain.tar.gz'
-COIN_CHAIN='https://node-support.network/bootstrap/'$COIN_CHAIN_FILE
+#COIN_CHAIN_FILE='argoneum-blockchain.tar.gz'
+#COIN_CHAIN='https://node-support.network/bootstrap/'$COIN_CHAIN_FILE
 PHYS_MEM=$(echo $(($(getconf _PHYS_PAGES) * $(getconf PAGE_SIZE) / (1024 * 1024))))
-COIN_NAME='ARGO'
+COIN_NAME='Argoneum'
 COIN_PORT=8989
 RPC_PORT=8988
 
@@ -231,7 +231,7 @@ echo -e "Installing and configuring ${GREEN}Sentinel${NC}."
 mkdir $DATAFOLDER >/dev/null 2>&1
 cd $DATAFOLDER >/dev/null 2>&1
 sudo apt-get -y install python-virtualenv virtualenv >/dev/null 2>&1
-git clone https://github.com/Argo20/sentinel.git && cd sentinel >/dev/null 2>&1
+git clone https://github.com/Argoneum/sentinel.git && cd sentinel >/dev/null 2>&1
 virtualenv ./venv >/dev/null 2>&1
 ./venv/bin/pip install -r requirements.txt >/dev/null 2>&1
 ./venv/bin/python bin/sentinel.py >/dev/null 2>&1
@@ -240,7 +240,7 @@ chmod 0600 /var/spool/cron/crontabs/root >/dev/null 2>&1
 (crontab -l 2>/dev/null; echo "* * * * * cd $DATAFOLDER/sentinel && SENTINEL_DEBUG=1 ./venv/bin/python bin/sentinel.py") | crontab -
 (crontab -l 2>/dev/null; echo "0 0 * * 0 rm $DATAFOLDER/sentinel/sentinel.log") | crontab -
 
-echo 'argo_conf='$CONFIGFOLDER/$CONFIG_FILE$'
+echo 'argoneum_conf='$CONFIGFOLDER/$CONFIG_FILE$'
 network=mainnet
 db_name=database/sentinel.db
 db_driver=sqlite' | sudo -E tee $SENTINEL_CONF >/dev/null 2>&1
@@ -274,8 +274,8 @@ wget -q $COIN_CHAIN
 tar -xzvf $COIN_CHAIN_FILE -C $TMP_PATH/ >/dev/null 2>&1
 rm -rf $CONFIGFOLDER/blocks/ >/dev/null 2>&1
 rm -rf $CONFIGFOLDER/chainstate/ >/dev/null 2>&1
-mv $TMP_PATH/root/Bootstrap/.argocore/blocks/ $CONFIGFOLDER/ >/dev/null 2>&1
-mv $TMP_PATH/root/Bootstrap/.argocore/chainstate/ $CONFIGFOLDER/ >/dev/null 2>&1
+mv $TMP_PATH/root/Bootstrap/.argoneum/blocks/ $CONFIGFOLDER/ >/dev/null 2>&1
+mv $TMP_PATH/root/Bootstrap/.argoneum/chainstate/ $CONFIGFOLDER/ >/dev/null 2>&1
 cd ~
 rm -r $TMP_PATH >/dev/null 2>&1
 }
@@ -300,7 +300,7 @@ function important_information() {
 function setup_node() {
   get_ip
   create_config
-  bootstrap
+  #bootstrap
   create_key
   update_config
   enable_firewall

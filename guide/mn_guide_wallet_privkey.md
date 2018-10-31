@@ -11,7 +11,7 @@ Owning your wallet private key is very important to be able to restore your coin
     
     <img src="https://node-support.network/coins/argo/mn-guide/2.png">
 
-    If you started your ARGO wallet 1st time, your main wallet label should be **(no label)**, you can everytime rename it --> Just double-click on label and set your label.
+    If you started your Argoneum wallet 1st time, your main wallet label should be **(no label)**, you can everytime rename it --> Just double-click on label and set your label.
 
 2. Open Debug console (goto **Tools** -> **Debug console**)
 

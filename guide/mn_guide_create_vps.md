@@ -23,7 +23,7 @@ First you need to create a VPS to go forward with this guide. I prefer to use [*
     
     <img src="https://node-support.network/coins/argo/mn-guide/vps/4.png">
     
-    now goto **Server Hostname & Label** and enter **Server Hostname** and **Server Label** (_e.g. ARGO-mn01_)
+    now goto **Server Hostname & Label** and enter **Server Hostname** and **Server Label** (_e.g. Argoneum-mn01_)
     
     <img src="https://node-support.network/coins/argo/mn-guide/vps/5.png">
     
