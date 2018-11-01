@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='argo.conf'
+CONFIG_FILE='argoneum.conf'
 CONFIGFOLDER='/root/.argoneum'
 DATAFOLDER='/root/Argoneum'
 TMP_DATAFOLDER=$TMP_FOLDER/argoneum-1.0.0/bin/
@@ -16,7 +16,7 @@ COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 #COIN_CHAIN='https://node-support.network/bootstrap/'$COIN_CHAIN_FILE
 PHYS_MEM=$(echo $(($(getconf _PHYS_PAGES) * $(getconf PAGE_SIZE) / (1024 * 1024))))
 COIN_NAME='Argoneum'
-COIN_PORT=8989
+COIN_PORT=9898
 RPC_PORT=8988
 
 NODEIP=$(curl -s4 icanhazip.com)
@@ -131,8 +131,9 @@ maxconnections=64
 masternode=1
 externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
-addnode=173.212.203.209
-addnode=173.249.11.174
+addnode=212.237.7.101
+addnode=80.211.164.81
+addnode=104.207.146.175
 EOF
 }
 
