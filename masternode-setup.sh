@@ -232,7 +232,7 @@ echo -e "Installing and configuring ${GREEN}Sentinel${NC}."
 mkdir $DATAFOLDER >/dev/null 2>&1
 cd $DATAFOLDER >/dev/null 2>&1
 sudo apt-get -y install python-virtualenv virtualenv >/dev/null 2>&1
-git clone https://github.com/Argoneum/sentinel.git && cd sentinel >/dev/null 2>&1
+git clone https://github.com/Argo20/sentinel.git && cd sentinel >/dev/null 2>&1
 virtualenv ./venv >/dev/null 2>&1
 ./venv/bin/pip install -r requirements.txt >/dev/null 2>&1
 ./venv/bin/python bin/sentinel.py >/dev/null 2>&1
