@@ -235,7 +235,7 @@ sudo apt-get -y install python-virtualenv virtualenv >/dev/null 2>&1
 git clone https://github.com/Argoneum/sentinel.git && cd sentinel >/dev/null 2>&1
 virtualenv ./venv >/dev/null 2>&1
 ./venv/bin/pip install -r requirements.txt >/dev/null 2>&1
-./venv/bin/python bin/sentinel.py >/dev/null 2>&1
+./venv/bin/py.test ./test >/dev/null 2>&1
 touch  /var/spool/cron/crontabs/root >/dev/null 2>&1
 chmod 0600 /var/spool/cron/crontabs/root >/dev/null 2>&1
 (crontab -l 2>/dev/null; echo "* * * * * cd $DATAFOLDER/sentinel && ./venv/bin/python bin/sentinel.py >/dev/null 2>&1") | crontab -
@@ -245,6 +245,7 @@ network=mainnet
 db_name=database/sentinel.db
 db_driver=sqlite' | sudo -E tee $SENTINEL_CONF >/dev/null 2>&1
 chmod -R 755 $DATAFOLDER/sentinel/database
+./venv/bin/python bin/sentinel.py >/dev/null 2>&1
 clear
 }
 
