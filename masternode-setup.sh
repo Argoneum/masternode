@@ -12,8 +12,8 @@ COIN_PATH='/usr/local/bin/'
 COIN_LATEST_RELEASE='argoneum-1.0.0-linux64.tar.gz'
 COIN_TGZ=$(curl -s https://api.github.com/repos/Argoneum/argoneum/releases/latest | grep -i $COIN_LATEST_RELEASE | grep -i "browser_download_url" | awk -F" " '{print $2}' | sed 's/"//g')
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-#COIN_CHAIN_FILE='argoneum-blockchain.tar.gz'
-#COIN_CHAIN='https://node-support.network/bootstrap/'$COIN_CHAIN_FILE
+COIN_CHAIN_FILE='argoneum-blockchain.tar.gz'
+COIN_CHAIN='https://node-support.network/bootstrap/'$COIN_CHAIN_FILE
 PHYS_MEM=$(echo $(($(getconf _PHYS_PAGES) * $(getconf PAGE_SIZE) / (1024 * 1024))))
 COIN_NAME='Argoneum'
 COIN_PORT=9898
@@ -275,8 +275,8 @@ wget -q $COIN_CHAIN
 tar -xzvf $COIN_CHAIN_FILE -C $TMP_PATH/ >/dev/null 2>&1
 rm -rf $CONFIGFOLDER/blocks/ >/dev/null 2>&1
 rm -rf $CONFIGFOLDER/chainstate/ >/dev/null 2>&1
-mv $TMP_PATH/root/Bootstrap/.argoneum/blocks/ $CONFIGFOLDER/ >/dev/null 2>&1
-mv $TMP_PATH/root/Bootstrap/.argoneum/chainstate/ $CONFIGFOLDER/ >/dev/null 2>&1
+mv $TMP_PATH/root/.argoneum/blocks/ $CONFIGFOLDER/ >/dev/null 2>&1
+mv $TMP_PATH/root/.argoneum/chainstate/ $CONFIGFOLDER/ >/dev/null 2>&1
 cd ~
 rm -r $TMP_PATH >/dev/null 2>&1
 }
@@ -301,7 +301,7 @@ function important_information() {
 function setup_node() {
   get_ip
   create_config
-  #bootstrap
+  bootstrap
   create_key
   update_config
   enable_firewall
