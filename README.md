@@ -1,6 +1,7 @@
 # IMPORTANT:
-> this script and repository is forked from Argo. It can be used as a reference, but should be revised. Meanwhile please use the oficially supported automated masternode install script from release notes.
+> This script and repository are forked from Argo. The guide can be used as a reference, but script must be revised. It does not suport most features of the new one (visible install, daemon log rotation, sentinel, the final screen, multiplatform support). Please use the officially supported automated masternode install script from release notes: https://github.com/Argoneum/argoneum/releases
 
+------------
 
 
 # Masternode guide and script files related to Argoneum masternode
