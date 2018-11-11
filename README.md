@@ -1,3 +1,8 @@
+# IMPORTANT:
+> this script and repository is forked from Argo. It can be used as a reference, but should be revised. Meanwhile please use the oficially supported automated masternode install script from release notes.
+
+
+
 # Masternode guide and script files related to Argoneum masternode
 
 Welcome to our Argoneum masternode repository. Here you find guides like how to update your running masternode, how to setup a new masternode and some hints how to fix issues, which we heard about from our community.
