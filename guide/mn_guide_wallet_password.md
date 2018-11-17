@@ -15,7 +15,7 @@ To set a wallet password, follow this steps:
     
     confirm next window with **YES button**
     
-    <img src=https://node-support.network/coins/argoneum/01_wallet_password/3.png">
+    <img src="https://node-support.network/coins/argoneum/01_wallet_password/3.png">
     
     and last window with **OK button**
     
