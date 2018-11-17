@@ -7,23 +7,23 @@ To set a wallet password, follow this steps:
 
 1. Open your wallet, goto **Settings** -> **Encrypt Wallet**
 
-    <img src="https://node-support.network/coins/argo/mn-guide/3.png">
+    <img src="https://node-support.network/coins/argoneum/01_wallet_password/1.png">
     
 2. Set your password (do me a favor and **use strong password!**) and confirm with **OK button**
 
-    <img src="https://node-support.network/coins/argo/mn-guide/4.png">
+    <img src="https://node-support.network/coins/argoneum/01_wallet_password/2.png">
     
     confirm next window with **YES button**
     
-    <img src="https://node-support.network/coins/argo/mn-guide/5.png">
+    <img src=https://node-support.network/coins/argoneum/01_wallet_password/3.pngv">
     
     and last window with **OK button**
     
-    <img src="https://node-support.network/coins/argo/mn-guide/6.png">
+    <img src="https://node-support.network/coins/argoneum/01_wallet_password/4.png">
     
     Now you can test your password, unlock your wallet
     
-    <img src="https://node-support.network/coins/argo/mn-guide/10.png">
+    <img src="https://node-support.network/coins/argoneum/01_wallet_password/5.png">
     
     You're finished, lock your wallet.
 
