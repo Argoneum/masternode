@@ -4,11 +4,13 @@
 
 Easiest way is to use our Argoneum masternode setup script, copy and paste this command and hit enter:
     
-    `sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/Argoneum/masternode/master/masternode-setup.sh)"`
+    `sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/Argoneum/argoneum/master/contrib/masternodes/argoneum_masternode_install.sh)"`
        
-Script begins it's work and you will be asked if SWAP file is allowed. If you followed my instructions and you created a VPS at [**Vultr**](https://www.vultr.com/?ref=7397596) then type **y** and hit enter.
+Script begins it's work and asks you if you want to **Install masternode and build environment**:
 
-Next question you will be asked is to enter a **masternode genkey**. You have 2 options to generate a masternode key:
+<img src="https://node-support.network/coins/argoneum/06_masternode/1.png">
+
+Bext question you will be asked is to enter a **masternode genkey**. You have 2 options to generate a masternode key:
     
 1. Via Argoneum masternode setup script
 
@@ -18,23 +20,23 @@ Next question you will be asked is to enter a **masternode genkey**. You have 2 
 
     To generate a masternode genkey, open **Debug console** in your wallet
     
-    <img src="https://node-support.network/coins/argo/mn-guide/setup/1.png">
+    <img src="https://node-support.network/coins/argoneum/06_masternode/2.png">
     
     enter **masternode genkey** in the command line
     
-    <img src="https://node-support.network/coins/argo/mn-guide/setup/2.png">
+    <img src="https://node-support.network/coins/argoneum/06_masternode/3.png">
     
     and the masternode genkey is generated
     
-    <img src="https://node-support.network/coins/argo/mn-guide/setup/3.png">
+    <img src="https://node-support.network/coins/argoneum/06_masternode/4.png">
     
 Now copy your genkey and paste it to PuTTY SSH session and hit enter
 
-<img src="https://node-support.network/coins/argo/mn-guide/setup/4.png">
+<img src="https://node-support.network/coins/argoneum/06_masternode/5.png">
 
 script continues with work and after everything is done, you get all needed informations at the end
 
-<img src="https://node-support.network/coins/argo/mn-guide/setup/5.png">
+<img src="https://node-support.network/coins/argoneum/06_masternode/6.png">
 
 Keep this window open, or copy **VPS_IP:PORT** and **MASTERNODE PRIVATEKEY** to a text file.
 
