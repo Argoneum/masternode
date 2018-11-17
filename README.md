@@ -13,9 +13,9 @@ Welcome to our Argoneum masternode repository. Here you find guides like how to 
 To install a new Argoneum masternode (including updates and sentinel), just download our script and execute it and follow steps showed in script.
 
 **Important:** Run this script as **_root_**, if you plan to run this script as non-root user, it may fails!\
-**Our script is tested on Ubuntu 16.04**
+**Our script is tested on Ubuntu 16.04, 17.10, 18.04 and 18.10**
 
-`sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/Argoneum/masternode/master/masternode-setup.sh)"`
+`sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/Argoneum/argoneum/master/contrib/masternodes/argoneum_masternode_install.sh)"`
 
 ## Issue with Wallet status **_WATCHDOG_EXPIRED_**
 
