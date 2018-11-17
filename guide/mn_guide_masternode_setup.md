@@ -8,7 +8,7 @@ Easiest way is to use our Argoneum masternode setup script, copy and paste this 
        
 Script begins it's work and asks you if you want to **Install masternode and build environment**:
 
-<img src="https://node-support.network/coins/argoneum/06_masternode/1.png">
+<img src="https://node-support.network/coins/argoneum/06_masternode_setup/1.png">
 
 Bext question you will be asked is to enter a **masternode genkey**. You have 2 options to generate a masternode key:
     
@@ -20,23 +20,23 @@ Bext question you will be asked is to enter a **masternode genkey**. You have 2 
 
     To generate a masternode genkey, open **Debug console** in your wallet
     
-    <img src="https://node-support.network/coins/argoneum/06_masternode/2.png">
+    <img src="https://node-support.network/coins/argoneum/06_masternode_setup/2.png">
     
     enter **masternode genkey** in the command line
     
-    <img src="https://node-support.network/coins/argoneum/06_masternode/3.png">
+    <img src="https://node-support.network/coins/argoneum/06_masternode_setup/3.png">
     
     and the masternode genkey is generated
     
-    <img src="https://node-support.network/coins/argoneum/06_masternode/4.png">
+    <img src="https://node-support.network/coins/argoneum/06_masternode_setup/4.png">
     
 Now copy your genkey and paste it to PuTTY SSH session and hit enter
 
-<img src="https://node-support.network/coins/argoneum/06_masternode/5.png">
+<img src="https://node-support.network/coins/argoneum/06_masternode_setup/5.png">
 
 script continues with work and after everything is done, you get all needed informations at the end
 
-<img src="https://node-support.network/coins/argoneum/06_masternode/6.png">
+<img src="https://node-support.network/coins/argoneum/06_masternode_setup/6.png">
 
 Keep this window open, or copy **VPS_IP:PORT** and **MASTERNODE PRIVATEKEY** to a text file.
 
