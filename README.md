@@ -20,15 +20,15 @@ To install a new Argoneum masternode (including updates and sentinel), just down
 ## Issue with Wallet status **_WATCHDOG_EXPIRED_**
 
 If you continue to occurs WATCHDOG_EXPIRED error, check the following:  
-`argo-cli mnsync status | grep IsSynced`
+`argoneum-cli mnsync status | grep IsSynced`
   
     "IsSynced": true,
   
-`argo-cli masternode status | grep status`
+`argoneum-cli masternode status | grep status`
   
     "status": "Masternode successfully started"
   
-`cd ~/Argoneum/sentinel/` \
+`cd ~/argoneum-sentinel/` \
 `./venv/bin/py.test ./test`
   
     ===== 23 passed in 0.25 seconds =====
