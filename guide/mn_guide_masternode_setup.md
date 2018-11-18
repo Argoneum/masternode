@@ -4,7 +4,7 @@
 
 Easiest way is to use our Argoneum masternode setup script, copy and paste this command and hit enter:
     
-    `sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/Argoneum/argoneum/master/contrib/masternodes/argoneum_masternode_install.sh)"`
+    sudo bash -c "$(curl -fsSL https://raw.githubusercontent.com/Argoneum/argoneum/master/contrib/masternodes/argoneum_masternode_install.sh)"
        
 Script begins it's work and asks you if you want to **Install masternode and build environment**:
 
