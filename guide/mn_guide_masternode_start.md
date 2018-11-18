@@ -33,7 +33,7 @@ All informations should be added **in one line** to masternode.conf as you can s
 
 <img src="https://node-support.network/coins/argoneum/07_masternode_start/4.png">
 
-Now goto **Masternodes** tab and you should see one entry
+Now goto **Masternodes** tab and you should see one entry\
 **Note: I use here a different Port, beacause I'm on our testnet. You need to use Port 9898 !**
 
 <img src="https://node-support.network/coins/argoneum/07_masternode_start/5.png">
