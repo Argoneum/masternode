@@ -6,7 +6,7 @@ To start your masternode, open your wallet and goto **Tools -> Open Masternode C
 
 <img src="https://node-support.network/coins/argoneum/07_masternode_start/1.png">
 
-Notepad opens the masternode.conf file which is empty
+Notepad opens the masternode.conf file and you see an example how to add a complete entry for masternode:
 
 <img src="https://node-support.network/coins/argoneum/07_masternode_start/2.png">
 
