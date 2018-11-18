@@ -46,7 +46,7 @@ To run a masternode, you need to send 10000 AGM coins to a new generated wallet.
     
     you will see your collateral tx/txid output, like:
     
-    `"6aefa62c1bebd5248a873535e66544b3f4d850fb4cf1f6fa7f2747c95c37c4d9": "1"`
+    `"2efe1f70c61f9e44c0d12e763e461afd6b0cec2f234745b04a82e53d0eef3788": "1"`
     
     which is needed for masternode.conf (will be needed later for wallet configuration)\
     Copy this collateral tx/txid to a text file

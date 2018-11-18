@@ -25,7 +25,7 @@ now we need to add some informations in this file:
 
 All informations should be added **in one line** to masternode.conf as you can see my example:
 
-`mn01 95.179.156.105:10898 92bMhjrGjiwDb42M75bGzLcCLdDZ9sSLi63TR29E7BTVDX43y3d 2efe1f70c61f9e44c0d12e763e461afd6b0cec2f234745b04a82e53d0eef3788 1`
+`mn01 95.179.156.105:9898 92bMhjrGjiwDb42M75bGzLcCLdDZ9sSLi63TR29E7BTVDX43y3d 2efe1f70c61f9e44c0d12e763e461afd6b0cec2f234745b04a82e53d0eef3788 1`
 
 <img src="https://node-support.network/coins/argoneum/07_masternode_start/3.png">
 
@@ -34,6 +34,7 @@ All informations should be added **in one line** to masternode.conf as you can s
 <img src="https://node-support.network/coins/argoneum/07_masternode_start/4.png">
 
 Now goto **Masternodes** tab and you should see one entry
+**Note: I use here a different Port, beacause I'm on our testnet. You need to use Port 9898 !**
 
 <img src="https://node-support.network/coins/argoneum/07_masternode_start/5.png">
 
